@@ -8,7 +8,7 @@ EXECUTABLE=hello
 all: $(SOURCES) $(EXECUTABLE)
 
 clean:
-	rm $(OBJECTS) $(EXECUTABLE)
+	rm -f $(OBJECTS) $(EXECUTABLE)
 	
 $(EXECUTABLE): $(OBJECTS) 
 	$(CC) $(LDFLAGS) $(OBJECTS) -o $@
